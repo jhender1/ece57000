@@ -1,0 +1,2 @@
+def QueryFoodItem(itemLabel):
+    pass
