@@ -17,8 +17,8 @@ Dependencies: see dependencies.txt
 Usage: FOR TESTING PURPOSES ONLY
     1. Edit the absolute path to the image to be classified (Line 71)
     2. From a Windows Powershell terminal, navigate to the project root directory.
-    3. Execute .\venv\Scripts\Activate.ps1
-    4. Execute .\venv\scripts\python.exe ClassifierModel.py
+    3. Execute .\.venv\Scripts\Activate.ps1
+    4. Execute .\.venv\scripts\python.exe ClassifierModel.py
 """
 
 import torch

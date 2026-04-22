@@ -18,8 +18,8 @@ Dependencies: see dependencies.txt
 
 Usage:
     1. From a Windows Powershell terminal, navigate to the project root directory.
-    2. Execute .\venv\Scripts\Activate.ps1
-    3. Execute .\venv\scripts\python.exe NutritionApp.py
+    2. Execute .\.venv\Scripts\Activate.ps1
+    3. Execute .\.venv\scripts\python.exe NutritionApp.py
 """
 
 from Model import ClassifierModel
