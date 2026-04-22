@@ -26,7 +26,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="labelFoodItem">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
           <horstretch>0</horstretch>
@@ -34,7 +34,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>Select the correct food item from the list</string>
+         <string>Select the nutrition information for item: ***</string>
         </property>
        </widget>
       </item>

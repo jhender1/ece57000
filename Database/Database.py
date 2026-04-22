@@ -1,3 +1,30 @@
+"""
+File:           Database.py
+Author:         Your Name
+Created:        2023-10-27
+Last Modified:  2026-04-22
+
+Course Project Usage:
+    This file was written by the author prior to the start of this course project and has been incorporated into the
+	project as part of its implementation.
+
+Description:
+    Database.py contains a class that manages the interface to an sqlite database.  Functions included in the class can
+	be used to open and close the database, add or delete tables, add columns and records to tables, and query database 
+	data in several different formats.
+
+Dependencies:
+    - sqlite3
+
+Usage:
+    Database.py is not intended to be executed directly.  The myDatabase and queryBuilder classes should be imported by 
+	other components of the project where access to an sqlite database is required.
+
+Intellectual Property Notice:
+    This code was independently developed by the author and remains their intellectual property. Its inclusion in this
+	project does not transfer ownership or waive any rights to the original work.
+"""
+
 import sqlite3
 
 class myDatabase:
@@ -193,17 +220,3 @@ class queryBuilder():
 
 	def get_string(self):
 		return self.strSql
-
-if __name__ == "__main__":
-	#myString = queryBuilder()
-	#myString.add_selection('InvAccounts', ['Josh','Staci','Meredith','Elaina'])
-	#myString.add_statement('WHERE ACTIVE = 1')
-	#myString.add_sorting('Position')
-	#print(myString.get_string())
-	qFilenameDb = r'C:\Users\joshm\OneDrive\Documents\Josh\03_Financial\Database\ExpenseTracking_20231215.db'
-	db = myDatabase()
-	db.open(qFilenameDb)
-	#result = db.RecordExists('Assets',{'key': 'symbol', 'idx': 'QQQ'})
-	result = db.getRecord('Assets',{'key': 'symbol', 'idx': 'VOO'})
-	db.close()
-	pass

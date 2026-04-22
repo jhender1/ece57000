@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\git\ece57000\UserInterface\.\uiFoodSearch.ui'
+# Form implementation generated from reading ui file 'C:\git\ece57000\UserInterface\uiFoodSearch.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -23,14 +23,14 @@ class Ui_FoodSearchDialog(object):
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.label = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        self.labelFoodItem = QtWidgets.QLabel(self.verticalLayoutWidget_2)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy)
-        self.label.setObjectName("label")
-        self.horizontalLayout_2.addWidget(self.label)
+        sizePolicy.setHeightForWidth(self.labelFoodItem.sizePolicy().hasHeightForWidth())
+        self.labelFoodItem.setSizePolicy(sizePolicy)
+        self.labelFoodItem.setObjectName("labelFoodItem")
+        self.horizontalLayout_2.addWidget(self.labelFoodItem)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.cbFoundation = QtWidgets.QCheckBox(self.verticalLayoutWidget_2)
@@ -154,7 +154,7 @@ class Ui_FoodSearchDialog(object):
     def retranslateUi(self, FoodSearchDialog):
         _translate = QtCore.QCoreApplication.translate
         FoodSearchDialog.setWindowTitle(_translate("FoodSearchDialog", "Select Food Item"))
-        self.label.setText(_translate("FoodSearchDialog", "Select the correct food item from the list"))
+        self.labelFoodItem.setText(_translate("FoodSearchDialog", "Select the nutrition information for item: ***"))
         self.cbFoundation.setText(_translate("FoodSearchDialog", "Foundation"))
         self.cbSrLegacy.setText(_translate("FoodSearchDialog", "SR Legacy"))
         self.cbBranded.setText(_translate("FoodSearchDialog", "Branded"))
